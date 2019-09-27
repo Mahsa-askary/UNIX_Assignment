@@ -146,10 +146,14 @@ I ran the code above for all the seperate chromosome files of maize and teosinte
  
  
 $ grep unknown K3_K2_joined_sorted_teosinte.txt > unknown_teosinte.txt
+
 $ grep unknown K3_K2_joined_sorted_maize.txt > unknown_maize.txt
+
 $ grep multiple K3_K2_joined_sorted_maize.txt > multiple_maize.txt
+
 $ grep multiple K3_K2_joined_sorted_teosinte.txt > multiple_teosinte.txt
 
 $ awk '$2 != "multiple"' multiple_teosinte.txt > final_multiple_teosinte.txt
+
 $ awk '$2 != "multiple"' multiple_maize.txt > final_multiple_maize.txt
 
