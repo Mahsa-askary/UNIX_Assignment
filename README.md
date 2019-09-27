@@ -134,10 +134,10 @@ I ran the code above for all the seperate chromosome files of maize and teosinte
 
 ###Sorting based on decreasing positions in Maize and Teosinte
 
- $ sort -k3,1n sed-_chr9_maize.txt > dec_sed-_chr9_maize.txt
+ $ sort -k3,1nr sed-_chr9_maize.txt > dec_sed-_chr9_maize.txt
  
  
- $ sort -k3,1n sed-_chr9_teosinte.txt > dec_sed-_chr9_teosinte.txt
+ $ sort -k3,1nr sed-_chr9_teosinte.txt > dec_sed-_chr9_teosinte.txt
  
  I ran the code above for all the seperate chromosome files of maize and teosinte
  
