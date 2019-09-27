@@ -82,7 +82,7 @@ $ join -1 1 -2 1 -t $'\t' sorted_maize.txt sorted_cut_snp_position.txt > joined_
 
 ###The chromosome and position columns were in the end of file so I needed to bring them to $2 and $3
 
-awk -F "\t" '{print NF; exit}' joined_sorted_maize.txt
+$ awk -F "\t" '{print NF; exit}' joined_sorted_maize.txt
 1810
 
 $ awk -F'\t' -v OFS="\t" '{$2=$1809 OFS $2;$1809=""}7' joined_sorted_maize.txt > K2_joined_sorted_maize.txt 
@@ -98,7 +98,7 @@ $ awk -F'\t' -v OFS="\t" '{$3=$1213 OFS $3;$1213=""}7' k2_joined_sorted_teosinte
 
 ###Making 10 files based on chromosome number in maize and teosinte
 
-for i in {1..10}; do awk '$2 == '$i'' K3_K2_joined_sorted_teosinte.txt > chr"$i"_teosinte.txt; done
+$ for i in {1..10}; do awk '$2 == '$i'' K3_K2_joined_sorted_teosinte.txt > chr"$i"_teosinte.txt; done
 
 $ for i in {1..10}; do awk '$2 == '$i'' K3_K2_joined_sorted_maize.txt > chr"$i"_maize.txt; done
 
@@ -139,7 +139,7 @@ I ran the code above for all the seperate chromosome files of maize and teosinte
  
  $ sort -k3,1n sed-_chr9_teosinte.txt > dec_sed-_chr9_teosinte.txt
  
- 
+ I ran the code above for all the seperate chromosome files of maize and teosinte
  
  
  ###Multiple and unknown positions 
